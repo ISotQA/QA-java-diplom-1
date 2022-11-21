@@ -16,7 +16,7 @@ public class BunWithParamTest {
         this.price = price;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0} {1} {2}")
     public static Object[][] bunParam() {
         return new Object[][]{
                 {"black bun", 100f},
